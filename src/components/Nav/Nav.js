@@ -7,7 +7,7 @@ export default function Nav() {
   return (
     <nav>
       <div className="logo">
-        <Link to='/home'>
+        <Link to='/'>
         <h2>#VANLIFE</h2>
         </Link>
       </div>
