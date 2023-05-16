@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.logo {
+    font-size: 1.563rem;
+    font-weight: 900;
+}
+
+.nav-links{
+    display: flex;
+    gap: 0.625rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #6b6565;
+}
+
+@media (min-width: 576px) {
+    nav {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width:300px) {
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-links a {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,69 @@
+.about-image img{
+    width: 100%;
+    max-height: 300px;
+}
+
+.about-texts {
+    padding: 10px;
+}
+
+.about-texts h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.about-texts p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.about-card {
+    width: 90%;
+    height: 150px;
+    background-color: #FFCC8D;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 20px 10px 40px 10px;
+}
+
+.about-card h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.explore-btn {
+    width: 174px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #161616;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    background-color: #4d4c4c;
+}
+
+@media (min-width: 576px) {
+    .about-texts {
+        text-align: center;
+    }
+
+    .about-card {
+        width: 80%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px
+    }
+
+    .explore-btn {
+        margin-bottom: 0px;
+    }
+}

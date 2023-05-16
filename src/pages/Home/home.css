@@ -1,0 +1,53 @@
+.home-section {
+    background-image: url(../../images/image\ 53.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 500px;
+    min-height: 300px;
+    color: #fff;
+    padding: 10px 20px 30px 20px ;
+}
+
+.home-section h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.home-section h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.home-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.find-van-btn {
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF8C38;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.find-van-btn:hover {
+    background-color: #f6a266;
+}
+
+@media (min-width: 575px) {
+    .home-section {
+        text-align: center;
+    }
+}
