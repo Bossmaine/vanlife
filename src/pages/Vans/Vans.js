@@ -3,6 +3,7 @@ import './vans.css'
 import Nav from '../../components/Nav/Nav'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import Footer from '../../components/Footer/Footer'
 
 
 export default function Vans() {
@@ -13,8 +14,6 @@ export default function Vans() {
           .then(res => res.json())
           .then(data => setVans(data.vans))
   }, [])
-
-  console.log(vans);
 
   const cardElements = vans.map(van => {
 
@@ -35,18 +34,20 @@ export default function Vans() {
     }
 
     return (
-      <div key={van.id} className='card'>
-      <div className="card-img">
-        <img src={van.imageUrl} alt='van' />
-      </div>
-      <div className="card-content">
-        <div className="card-title">
-            <h4>{van.name}</h4>
-            <h4>{van.price}<span>/day</span></h4>
+      <Link key={van.id} to={`/vans-details/${van.id}`}>
+        <div  className='card'>
+        <div className="card-img">
+          <img src={van.imageUrl} alt='van' />
         </div>
-        <div className="card-badge" style={badgeStyle}>{van.type}</div>
-      </div>
-    </div>
+        <div className="card-content">
+          <div className="card-title">
+              <h4>{van.name}</h4>
+              <h4>{van.price}<span>/day</span></h4>
+          </div>
+          <div className="card-badge" style={badgeStyle}>{van.type}</div>
+        </div>
+        </div>
+      </Link>
     )
   })
     
@@ -61,12 +62,13 @@ export default function Vans() {
           <button className='filter-btn'>Simple</button>
           <button className='filter-btn'>Luxury</button>
           <button className='filter-btn'>Rugged</button>
-          <Link to='/vans'>Clear Filters</Link>
+          <Link to='/vans' className='clear-filter'>Clear Filters</Link>
         </div>
         <div className="van-container">
-            {cardElements}
+          {cardElements}
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

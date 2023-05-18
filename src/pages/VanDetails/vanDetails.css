@@ -1,0 +1,24 @@
+.van-img img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.van-info p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #161616;
+}
+
+@media (min-width: 576px) {
+    .van-details-section {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .van-img img {
+        height: 300px;
+    }
+}
