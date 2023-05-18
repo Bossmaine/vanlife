@@ -1,9 +1,7 @@
 import React from 'react'
 import './vans.css'
-import Nav from '../../components/Nav/Nav'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import Footer from '../../components/Footer/Footer'
 
 
 export default function Vans() {
@@ -53,7 +51,6 @@ export default function Vans() {
     
   return (
     <div>
-      <Nav />
       <div className="van-section">
         <div className="vans">
          <h2 className='text-headers'>Explore our van options</h2>
@@ -68,7 +65,6 @@ export default function Vans() {
           {cardElements}
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

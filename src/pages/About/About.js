@@ -1,13 +1,10 @@
 import React from 'react'
-import Nav from '../../components/Nav/Nav'
 import './about.css'
 import AboutImage from '../../images/image 54.png'
-import Footer from '../../components/Footer/Footer'
 
 export default function About() {
   return (
     <div>
-      <Nav />
       <section>
         <div className="about-image">
             <img src={AboutImage} alt="Sitting on Van" />
@@ -25,7 +22,6 @@ export default function About() {
             <button className='explore-btn'>Explore our vans</button>
         </div>
       </section>
-        <Footer />
     </div>
   )
 }

@@ -1,9 +1,7 @@
 import React from 'react'
 import './vanDetails.css'
-import Nav from '../../components/Nav/Nav'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Footer from '../../components/Footer/Footer'
 
 export default function VanDetails() {
     const { id } = useParams()
@@ -35,7 +33,6 @@ export default function VanDetails() {
 
   return ( 
     <div>
-      <Nav />
       { van ? (
         <div className='van-section van-details-section'>
           <div className="van-img">
@@ -53,7 +50,6 @@ export default function VanDetails() {
         </div>
       ) : <h1>Unaivalabe! Check back later!!</h1>
       }
-        <Footer />
     </div>
 
   )
